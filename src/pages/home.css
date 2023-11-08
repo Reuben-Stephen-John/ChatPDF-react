@@ -1,0 +1,18 @@
+@import-normalize;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .cards-container {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center-align cards horizontally */
+    }
+  
+    .card {
+      width: 90%; /* Adjust card width for smaller screens */
+    }
+  }
