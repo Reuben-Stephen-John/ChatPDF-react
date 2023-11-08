@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 import moment from 'moment';
 import Image from './Image';
 import person from '../assets/person.png';
-import computer from '../assets/computer.webp';
+import computer from '../assets/view.png';
 
 /**
  * A chat message component that displays a message with a timestamp and an icon.

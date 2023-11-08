@@ -107,12 +107,12 @@ const ChatView = () => {
 
     try {
       const response = await rapidapi(pdfText,cleanPrompt,aiGeneratedMessages);
-      const data = response.text;
-      //const data = response.data;
+      //const data = response.text;
+      const data = response.data;
       data && updateMessage(data, true, aiModel);
     } catch (err) {
       const data =
-        "Connect thine hugging face lawgpt model to get better responses than this --Reuben";
+        "Connect required API to get appropriate responses";
       updateMessage(data, true, aiModel);
     }
     setThinking(false);
