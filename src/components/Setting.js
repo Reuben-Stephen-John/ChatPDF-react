@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { checkApiKey } from '../utils/checkKeys';
+// import { checkApiKey } from '../utils/checkKeys';
 
 const Setting = ({ modalOpen, setModalOpen }) => {
   const apiKey = window.localStorage.getItem('api-key') || '';
@@ -13,16 +13,16 @@ const Setting = ({ modalOpen, setModalOpen }) => {
     setErrorMsg('');
     const keys = input;
 
-    await checkApiKey(keys)
-      .then(() => {
-        window.localStorage.setItem('api-key', keys);
-        console.log('works');
-        setModalOpen(false);
-      })
-      .catch(() => {
-        console.log('doesnt work');
-        setErrorMsg('error: incorrect keys');
-      });
+    // await checkApiKey(keys)
+    //   .then(() => {
+    //     window.localStorage.setItem('api-key', keys);
+    //     console.log('works');
+    //     setModalOpen(false);
+    //   })
+    //   .catch(() => {
+    //     console.log('doesnt work');
+    //     setErrorMsg('error: incorrect keys');
+    //   });
 
     setLoading(false);
   };
