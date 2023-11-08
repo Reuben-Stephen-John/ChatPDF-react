@@ -6,7 +6,8 @@ const rapidapi = async (pdf,question,aiGeneratedMessages) => {
 
     const prompt = `${pdf}\n${[precursor]}\n${aiGeneratedMessages}\n${quest}\n${question}`;
     //const prompt = `${pdf}`;
-    const rapidapi_key=process.env.REACT_APP_RAPID_API_KEY;
+    const rapidapi_key=process.env.REACT_APP_RAPID_API_KEY; 
+    
 
     const options = {
       method: 'POST',

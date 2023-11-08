@@ -8,7 +8,7 @@ import {
 } from 'react-icons/md';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { ChatContext } from '../context/chatContext';
-import bot from '../assets/law.ico';
+import bot from '../assets/logo.ico';
 import DarkMode from './DarkMode';
 import Modal from './Modal';
 import Setting from './Setting';
@@ -43,7 +43,7 @@ const SideBar = () => {
           </span>
         </div>
         <h1 className={`sidebar__app-title ${!open && 'scale-0 hidden'}`}>
-          Niyam Sahayak
+          SummarEase
         </h1>
         <div className={`sidebar__btn-close`} onClick={() => setOpen(!open)}>
           {open ? (
